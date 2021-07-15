@@ -35,7 +35,9 @@
         border-radius: 20px;
         padding: 45px 0 90px 0 !important;
     }
-
+ .card-title{
+    font-size: 20px;
+ }
     .card-icon {
         position: relative;
         width: 80px;
@@ -153,11 +155,11 @@
 @include desktop-lg {
     .card {
         .card-title {
-            font-size: 18px;
+            font-size: 16px !important;
         }
 
         p {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 }
@@ -177,15 +179,7 @@
             font-size: 35px;
         }
 
-        h4 {
-            padding-left: 56px;
-            padding-right: 35px;
-            line-height: 1.5;
-        }
-
-        p {
-            padding: 0 56px;
-        }
+      
     }
 }
 
@@ -202,7 +196,7 @@
 @include tablet {
     .collaborative-workspace {
         .block {
-            width: 50%;
+            width: 100%;
             margin-bottom: 10px;
         }
 
@@ -222,18 +216,7 @@
 }
 
 // ///chart
-#chart {
 
-
-    h4 {
-        padding-left: 35px;
-    }
-
-    p {
-        padding-left: 35px;
-
-    }
-}
 
 
 .chart-number {
@@ -273,9 +256,6 @@
 
 
 }
-
-
-
 
 
 @include desktop-lg {
@@ -354,6 +334,11 @@
 }
 
 @include tablet {
+    #testimonial{
+        h2{
+            font-size: 31px;
+        }
+    }
     .testimonial-right-slider {
         text-align: center;
 
