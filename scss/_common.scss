@@ -1,0 +1,62 @@
+// common 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+section {
+  padding-top: 100px;
+}
+
+.btn {
+  &:hover {
+    background: $secondery-color !important;
+    transform: scale(.95);
+  }
+}
+
+.border-bottom {
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid $border-color !important;
+
+}
+
+.bg-tertiary {
+  background-color: $tertiary-color !important;
+}
+
+.bg-tertiary-light{
+  background-color: lighten($color: $tertiary-color, $amount: 4) !important;
+}
+
+.rounded-4 {
+  border-radius: 45px !important;
+}
+
+.rounded-3 {
+  border-radius: 16px !important;
+}

@@ -1,0 +1,521 @@
+// about
+.svg {
+    width: 100%;
+    position: relative;
+    top: -72px;
+    z-index: -1 !important;
+
+}
+
+#about h4 {
+    padding: 0 70px;
+    line-height: 1.8;
+}
+
+#about {
+    position: relative;
+    padding-top: 0px !important;
+    margin-top: 150px;
+
+    .svg {
+        width: 100%;
+        position: absolute;
+        top: -78px;
+        z-index: 1;
+    }
+}
+
+.bg-color {
+    background: $primary-color !important;
+}
+
+
+#about {
+    .card {
+        border-radius: 20px;
+        padding: 45px 0 90px 0 !important;
+    }
+
+    .card-icon {
+        position: relative;
+        width: 80px;
+        height: 87px;
+        margin: 20px 0;
+        background: $tertiary-color;
+        border-radius: 17px;
+        color: white;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px 8px 0px rgba(11, 75, 97, 0.4));
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: $tertiary-color;
+            width: 75%;
+            height: 10px;
+            left: 10px;
+            top: -2.7px;
+            border-radius: 50%;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: $tertiary-color;
+            width: 75%;
+            height: 10px;
+            left: 10px;
+            bottom: -2.7px;
+            border-radius: 50%;
+        }
+
+        i {
+            position: absolute;
+            font-size: 25px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    .card-body {
+        padding-bottom: 0;
+        padding-top: 27px;
+    }
+}
+
+@include mobile {
+    #about {
+        .svg {
+            top: -30px;
+        }
+
+        h4 {
+            line-height: 1.3;
+            font-size: 13px;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            margin-bottom: 30px;
+
+            .card-title {
+                font-size: 21px;
+            }
+
+        }
+
+    }
+
+
+}
+
+@include tablet {
+    #about {
+        .svg {
+            width: 100%;
+            position: absolute;
+            top: -40px;
+            z-index: 1;
+        }
+
+        h4 {
+            font-size: 16px;
+            padding: 0;
+            padding-bottom: 30px;
+        }
+    }
+
+
+    .card {
+        p {
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+
+@include desktop {
+    .card {
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@include desktop-lg {
+    .card {
+        .card-title {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+// step
+.collaborative-workspace {
+    .block {
+        width: 32%;
+        position: relative;
+
+        .block-number {
+            color: $secondery-color;
+            position: relative;
+            left: -5px;
+            top: 47px;
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        h4 {
+            padding-left: 56px;
+            padding-right: 35px;
+            line-height: 1.5;
+        }
+
+        p {
+            padding: 0 56px;
+        }
+    }
+}
+
+@include mobile {
+    .collaborative-workspace {
+        .block {
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+@include tablet {
+    .collaborative-workspace {
+        .block {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
+
+@include desktop {
+    .collaborative-workspace {
+        .block {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
+
+// ///chart
+#chart {
+
+
+    h4 {
+        padding-left: 35px;
+    }
+
+    p {
+        padding-left: 35px;
+
+    }
+}
+
+
+.chart-number {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: $text-bg-primary;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: $white;
+}
+
+.rounded-3:nth-child(2) .chart-number {
+    background-color: $secondery-color;
+}
+
+.rounded-3:nth-child(3) .chart-number {
+    background-color: $primary-color;
+}
+
+.chart-img {
+    background: $text-bg-color;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+@include mobile {
+    #chart {
+        p {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+    }
+
+
+}
+
+
+
+
+
+@include desktop-lg {
+    #chart {
+        h4 {
+            font-size: 16px;
+        }
+
+        .img {
+            margin-top: 85px !important;
+        }
+    }
+
+}
+
+// testimonial
+
+.testimonial-right-slider {
+    p {
+        font-weight: 400;
+        padding-right: 140px;
+        line-height: 1.5;
+        color: $para-color !important;
+    }
+
+    h3 {
+        font-weight: 700;
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+
+        button {
+            font-size: 0;
+            background: #0D6785;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 0;
+        }
+    }
+
+    .slick-active button {
+        background: $secondery-color;
+    }
+}
+
+@include mobile {
+    .testimonial-right-slider {
+        text-align: center;
+
+        p {
+            padding-right: 0;
+        }
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-33%);
+            margin-bottom: 15px;
+        }
+
+
+        .slick-dots {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@include tablet {
+    .testimonial-right-slider {
+        text-align: center;
+
+        p {
+            padding-right: 0;
+        }
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-33%);
+            margin-bottom: 15px;
+        }
+
+
+        .slick-dots {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@include desktop {
+    #testimonial h2{
+        font-size: 34px;
+    }
+    .testimonial-right-slider {
+        text-align: center;
+
+        p {
+            padding-right: 0;
+        }
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-33%);
+            margin-bottom: 15px;
+        }
+
+
+        .slick-dots {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@include desktop-lg {
+    .testimonial-right-slider p {
+        padding-right: 112px;
+        font-size: 16px;
+    }
+}
+
+// team
+@include mobile {
+    .team {
+        h4 {
+            font-size: 23px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+@include tablet {
+    .team {
+        h4 {
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+    }
+}
+@include desktop {
+    .team {
+        h4 {
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+    }
+}
+@include desktop-lg {
+    .team {
+        h4 {
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+// team
+// footer
+footer {
+    .list-inline {
+        a {
+            display: inline-block;
+
+            i {
+                width: 45.86px;
+                height: 45.86px;
+                border-radius: 50%;
+                background: $white;
+                line-height: 45.86px;
+                text-align: center;
+                transition: .4s;
+
+                &:hover {
+                    background: $secondery-color !important;
+                    color: $white !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    .list-unstyled {
+        li {
+            a {
+                transition: .4s;
+
+                &:hover {
+                    color: $secondery-color !important;
+                }
+            }
+        }
+    }
+
+}
+@include mobile{
+    footer{
+        text-align: center;
+        a{
+            margin-bottom: 20px !important;
+            display: inline-block;
+        }
+        p{
+            line-height: 1.3;
+        }
+    }
+}
+@include tablet{
+    footer{
+        text-align: center;
+       
+    }
+}
+@include desktop-lg{
+    footer{
+        .list-inline {
+            li{
+                margin-right: 5px !important;
+            }
+        }
+    }
+}
+// end //
+
+  
+  
+  

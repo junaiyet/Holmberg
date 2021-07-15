@@ -1,0 +1,256 @@
+.fixd-manu {
+    position: fixed !important;
+    background: $white !important;
+    width: 100%;
+}
+
+.fixd-manu ul li a {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.navigation {
+    .navbar {
+        background: $white;
+
+
+
+        ul {
+            li {
+                margin-right: 40px;
+
+                a {
+                    padding: 40px 0;
+                    display: inline-block;
+                    color: $text-color;
+                    position: relative;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 1.2;
+                    color: #333333;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        bottom: 100%;
+                        transform: translateX(-50%);
+                        background: $tertiary-color;
+                        width: 100%;
+                        height: 0px;
+                        border-bottom-left-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        transition: all linear .1s;
+                        -webkit-transition: all linear .1s;
+                        -moz-transition: all linear .1s;
+                        -ms-transition: all linear .1s;
+                        -o-transition: all linear .1s;
+}
+                        &:hover::after {
+                            height: 10px;
+                        }
+
+                    &:hover {
+                        color: $tertiary-color;
+                    }
+
+                }
+
+                .active::after {
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    bottom: 100%;
+                    transform: translateX(-50%);
+                    background: $tertiary-color;
+                    width: 100%;
+                    height: 10px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    transition: .4s;
+                    -webkit-transition:.4s ;
+                    -moz-transition:.4s;
+                    -ms-transition:.4s;
+                }
+            }
+        }
+
+        .btn {
+            background: $primary-color;
+            border: 0;
+            border-radius: 50px;
+            padding: 14px 25px;
+            transition: .4s;
+            margin-top: 15px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+            transition: .4s;
+
+        }
+    }
+
+
+}
+
+@include mobile {
+    .navigation {
+        button {
+            font-size: 35px;
+            background: $tertiary-color;
+            color: $white;
+        }
+
+        .navbar {
+            padding-bottom: 0 !important;
+
+            ul {
+                text-align: center;
+                padding: 20px 0 90px 40px;
+                background: $tertiary-color;
+
+                li {
+                    a {
+                        color: $white !important;
+                        padding-bottom: 10px !important;
+
+                        &:hover {
+                            color: $secondery-color !important;
+                        }
+                    }
+
+                    .active {
+                        color: $secondery-color !important;
+                    }
+
+                    a::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 80%;
+                padding: 10px 20px;
+                margin-top: 15px;
+            }
+        }
+
+
+    }
+}
+@include tablet {
+    .navigation {
+        button {
+            font-size: 35px;
+            background: $tertiary-color;
+            color: $white;
+        }
+
+        .navbar {
+            padding-bottom: 0 !important;
+
+            ul {
+                text-align: center;
+                padding: 20px 0 90px 40px;
+                background: $tertiary-color;
+
+                li {
+                    a {
+                        color: $white !important;
+                        padding-bottom: 10px !important;
+
+                        &:hover {
+                            color: $secondery-color !important;
+                        }
+                    }
+
+                    .active {
+                        color: $secondery-color !important;
+                    }
+
+                    a::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 80%;
+                padding: 10px 20px;
+                margin-top: 15px;
+            }
+        }
+
+
+    }
+}
+@include desktop {
+    .navigation {
+        button {
+            font-size: 35px;
+            background: $tertiary-color;
+            color: $white;
+        }
+
+        .navbar {
+            padding-bottom: 0 !important;
+
+            ul {
+                text-align: center;
+                padding: 20px 0 90px 40px;
+                background: $tertiary-color;
+
+                li {
+                    a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $secondery-color !important;
+                        }
+                    }
+
+                    .active {
+                        color: $secondery-color !important;
+                    }
+
+                    a::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 80%;
+                margin-top: 15px;
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+@include desktop-lg {
+    .navigation {
+        .navbar {
+            ul {
+                li {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}

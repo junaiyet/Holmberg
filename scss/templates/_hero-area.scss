@@ -1,0 +1,171 @@
+h1 {
+    margin-top: 30px;
+
+}
+
+p {
+    font-weight: 400;
+}
+
+.bannerbtn {
+    background: $primary-color;
+    border: 0;
+    border-radius: 50px;
+    padding: 20px 28px;
+    transition: .4s;
+    margin-top: -5px;
+    color: $white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.hero-img {
+    border-radius: 20px;
+    position: relative;
+
+    .card-img-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 16px;
+
+        .round {
+            width: 112.26px;
+            height: 112.26px;
+            position: absolute;
+            left: 49.7%;
+            top: 51.5%;
+            background: rgba(255, 189, 47, .3);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 112.26px;
+            border: 0;
+
+            i {
+                width: 93.26px;
+                height: 93.26px;
+                background: $secondery-color;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 25px;
+                text-align: center;
+                line-height: 93.26px;
+                margin-top: 10px;
+                transform: scale(1);
+                transition: all .5s;
+                cursor: pointer;
+
+                &:hover {
+                    transform-origin: center;
+                    transform: scale(.85);
+                }
+            }
+
+            &:hover {
+                animation: pulse 2s infinite;
+            }
+
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 #ffbd2fbb;
+                    ;
+                }
+
+                70% {
+                    box-shadow: 0 0 0 15px rgba(3, 168, 124, 0);
+                }
+
+                100% {
+                    box-shadow: 0 0 0 0 rgba(3, 168, 124, 0);
+                }
+            }
+        }
+    }
+}
+
+
+.venoframe.vbvid {
+    border-radius: 25px;
+}
+
+.vbox-close {
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    padding: 0px;
+    font-size: 30px;
+    background: #0B4C61 !important;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+@include mobile {
+    h1 {
+        font-size: 35px;
+        padding-bottom: 10;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .bannerbtn {
+        padding: 13px 17px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .hero-img {
+     
+        margin-bottom: -80px;
+       .card-img-overlay .round {
+            width: 60px;
+            height: 60px;
+    
+            i {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                position: absolute;
+                top: -5px;
+                left: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+
+@include tablet {
+    h1 {
+        font-size: 37px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .bannerbtn {
+        padding: 15px 20px;
+        font-size: 14px;
+        margin-bottom: 20px; 
+    }
+}
+@include desktop{
+    .bannerbtn {
+        padding: 18px 25px;
+        font-size: 15px;
+        margin-bottom: 30px; 
+    }
+}
+@include desktop-lg{
+    h1{
+        font-size: 37px;
+    }
+    p{
+        line-height: 1.3;
+    }
+}
