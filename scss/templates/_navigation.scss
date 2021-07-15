@@ -45,10 +45,11 @@
                         -moz-transition: all linear .1s;
                         -ms-transition: all linear .1s;
                         -o-transition: all linear .1s;
-}
-                        &:hover::after {
-                            height: 10px;
-                        }
+                    }
+
+                    &:hover::after {
+                        height: 11px;
+                    }
 
                     &:hover {
                         color: $tertiary-color;
@@ -64,13 +65,13 @@
                     transform: translateX(-50%);
                     background: $tertiary-color;
                     width: 100%;
-                    height: 10px;
+                    height: 11px;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
                     transition: .4s;
-                    -webkit-transition:.4s ;
-                    -moz-transition:.4s;
-                    -ms-transition:.4s;
+                    -webkit-transition: .4s;
+                    -moz-transition: .4s;
+                    -ms-transition: .4s;
                 }
             }
         }
@@ -142,6 +143,7 @@
 
     }
 }
+
 @include tablet {
     .navigation {
         button {
@@ -191,6 +193,7 @@
 
     }
 }
+
 @include desktop {
     .navigation {
         button {
