@@ -1,27 +1,4 @@
 
-// $(document).ready(function(){
-
-//   var sectionIds = $('.nav-link');
-
-//     $(document).scroll(function(){
-//         sectionIds.each(function(){
-
-//             var container = $(this).attr('href');
-//             var containerOffset = $(container).offset().top;
-//             var containerHeight = $(container).outerHeight();
-//             var containerBottom = containerOffset + containerHeight;
-//             var scrollPosition = $(document).scrollTop();
-    
-//             if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
-//                 $(this).addClass('active');
-//             } else{
-//                 $(this).removeClass('active');
-//             }
-    
-    
-//         });
-//     });
-// });
 
 
 
@@ -115,14 +92,29 @@ $('.testimonial-left-slider').slick({
     ]
   });
   // /////////////
+//     var stickyHeaderTop = $('.menu"').offset().top + 160;
 
   $(window).scroll(function(){
-    if($(window).scrollTop() > 400){
+    if($(window).scrollTop() > 500){
       $(".menu").addClass("fixd-manu")
     }else{
       $(".menu").removeClass("fixd-manu")
     }   
   })
+
+
+//   $(function(){
+//     // Check the initial Poistion of the Sticky Header
+//     var stickyHeaderTop = $('.menu"').offset().top + 160;
+
+//     $(window).scroll(function(){
+//             if( $(window).scrollTop() > stickyHeaderTop ) {
+//                     $('.menu"').addClass('fixd-manu');
+//             } else {
+//                     $('.menu"').removeClass('fixd-manu');
+//             }
+//     });
+// });
 
 
 

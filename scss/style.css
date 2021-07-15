@@ -112,8 +112,8 @@ h6,
 
 .fixd-manu {
   position: fixed !important;
-  background: #fff !important;
-  width: 100%; }
+  width: 100%;
+  z-index: 999; }
 
 .fixd-manu ul li a {
   padding-top: 20px !important;
@@ -123,7 +123,10 @@ h6,
   margin-top: 0px; }
 
 .navigation .navbar {
-  background: #fff; }
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
   .navigation .navbar ul li {
     margin-right: 40px; }
     .navigation .navbar ul li a {
@@ -134,7 +137,12 @@ h6,
       font-weight: 400;
       font-size: 15px;
       line-height: 1.2;
-      color: #333333; }
+      color: #333333;
+      transition: all linear .3s;
+      -webkit-transition: all linear .3s;
+      -moz-transition: all linear .3s;
+      -ms-transition: all linear .3s;
+      -o-transition: all linear .3s; }
       .navigation .navbar ul li a::after {
         position: absolute;
         content: "";
@@ -194,25 +202,19 @@ h6,
     padding-bottom: 0 !important; }
     .navigation .navbar ul {
       text-align: center;
-      padding: 20px 0 90px 40px;
+      padding: 40px;
       background: #0B4C61; }
-      .navigation .navbar ul li a {
-        color: #fff !important;
-        padding-bottom: 10px !important; }
-        .navigation .navbar ul li a:hover {
+      .navigation .navbar ul li {
+        margin-right: 0; }
+        .navigation .navbar ul li a {
+          color: #fff !important;
+          padding-bottom: 10px !important; }
+          .navigation .navbar ul li a:hover {
+            color: #ffbd2f !important; }
+        .navigation .navbar ul li .active {
           color: #ffbd2f !important; }
-      .navigation .navbar ul li .active {
-        color: #ffbd2f !important; }
-      .navigation .navbar ul li a::after {
-        display: none; }
-    .navigation .navbar .btn {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: 80%;
-      padding: 10px 20px;
-      margin-top: 15px; } }
+        .navigation .navbar ul li a::after {
+          display: none; } }
 @media (min-width: 576px) and (max-width: 768.98px) {
   .navigation button {
     font-size: 35px;
@@ -223,25 +225,19 @@ h6,
     padding-bottom: 0 !important; }
     .navigation .navbar ul {
       text-align: center;
-      padding: 20px 0 90px 40px;
+      padding: 40px;
       background: #0B4C61; }
-      .navigation .navbar ul li a {
-        color: #fff !important;
-        padding-bottom: 10px !important; }
-        .navigation .navbar ul li a:hover {
+      .navigation .navbar ul li {
+        margin-right: 0; }
+        .navigation .navbar ul li a {
+          color: #fff !important;
+          padding-bottom: 10px !important; }
+          .navigation .navbar ul li a:hover {
+            color: #ffbd2f !important; }
+        .navigation .navbar ul li .active {
           color: #ffbd2f !important; }
-      .navigation .navbar ul li .active {
-        color: #ffbd2f !important; }
-      .navigation .navbar ul li a::after {
-        display: none; }
-    .navigation .navbar .btn {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: 80%;
-      padding: 10px 20px;
-      margin-top: 15px; } }
+        .navigation .navbar ul li a::after {
+          display: none; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .navigation button {
     font-size: 35px;
@@ -252,23 +248,19 @@ h6,
     padding-bottom: 0 !important; }
     .navigation .navbar ul {
       text-align: center;
-      padding: 20px 0 90px 40px;
+      padding: 40px;
       background: #0B4C61; }
-      .navigation .navbar ul li a {
-        color: #fff !important; }
-        .navigation .navbar ul li a:hover {
+      .navigation .navbar ul li {
+        margin-right: 0; }
+        .navigation .navbar ul li a {
+          color: #fff !important;
+          padding-bottom: 10px !important; }
+          .navigation .navbar ul li a:hover {
+            color: #ffbd2f !important; }
+        .navigation .navbar ul li .active {
           color: #ffbd2f !important; }
-      .navigation .navbar ul li .active {
-        color: #ffbd2f !important; }
-      .navigation .navbar ul li a::after {
-        display: none; }
-    .navigation .navbar .btn {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: 80%;
-      margin-top: 15px; } }
+        .navigation .navbar ul li a::after {
+          display: none; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navigation .navbar ul li {
     margin-right: 25px; }

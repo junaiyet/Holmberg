@@ -1,7 +1,8 @@
 .fixd-manu {
     position: fixed !important;
-    background: $white !important;
     width: 100%;
+    z-index: 999;
+
 }
 
 .fixd-manu ul li a {
@@ -9,15 +10,17 @@
     padding-bottom: 20px !important;
 
 }
-.fixd-manu .btn{
+
+.fixd-manu .btn {
     margin-top: 0px;
 }
 
 .navigation {
     .navbar {
         background: $white;
-
-
+        position: fixed;
+        width: 100%;
+        z-index: 999;
 
         ul {
             li {
@@ -32,7 +35,11 @@
                     font-size: 15px;
                     line-height: 1.2;
                     color: #333333;
-
+                    transition: all linear .3s;
+                    -webkit-transition: all linear .3s;
+                    -moz-transition: all linear .3s;
+                    -ms-transition: all linear .3s;
+                    -o-transition: all linear .3s;
                     &::after {
                         position: absolute;
                         content: "";
@@ -111,10 +118,11 @@
 
             ul {
                 text-align: center;
-                padding: 20px 0 90px 40px;
+                padding: 40px;
                 background: $tertiary-color;
 
                 li {
+                    margin-right: 0;
                     a {
                         color: $white !important;
                         padding-bottom: 10px !important;
@@ -134,21 +142,12 @@
                 }
             }
 
-            .btn {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 80%;
-                padding: 10px 20px;
-                margin-top: 15px;
-                
-            }
+      
         }
 
 
     }
 }
-
 @include tablet {
     .navigation {
         button {
@@ -163,10 +162,11 @@
 
             ul {
                 text-align: center;
-                padding: 20px 0 90px 40px;
+                padding: 40px;
                 background: $tertiary-color;
 
                 li {
+                    margin-right: 0;
                     a {
                         color: $white !important;
                         padding-bottom: 10px !important;
@@ -186,20 +186,12 @@
                 }
             }
 
-            .btn {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 80%;
-                padding: 10px 20px;
-                margin-top: 15px;
-            }
+      
         }
 
 
     }
 }
-
 @include desktop {
     .navigation {
         button {
@@ -214,12 +206,14 @@
 
             ul {
                 text-align: center;
-                padding: 20px 0 90px 40px;
+                padding: 40px;
                 background: $tertiary-color;
 
                 li {
+                    margin-right: 0;
                     a {
                         color: $white !important;
+                        padding-bottom: 10px !important;
 
                         &:hover {
                             color: $secondery-color !important;
@@ -236,18 +230,15 @@
                 }
             }
 
-            .btn {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 80%;
-                margin-top: 15px;
-            }
+      
         }
 
 
     }
 }
+
+
+
 
 
 
@@ -261,7 +252,8 @@
                     margin-right: 25px;
                 }
             }
-            .btn{
+
+            .btn {
                 margin-top: 0;
             }
         }
