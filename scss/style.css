@@ -544,6 +544,9 @@ p {
   .collaborative-workspace .block {
     width: 50%;
     margin-bottom: 10px; } }
+#chart {
+  padding-top: 0 !important; }
+
 .chart-number {
   height: 25px;
   width: 25px;
