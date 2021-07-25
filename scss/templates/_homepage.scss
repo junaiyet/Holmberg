@@ -178,6 +178,9 @@
 }
 
 @include mobile {
+    #catagory{
+        padding-top: 50px;
+    }
     .collaborative-workspace {
         .block {
             width: 100%;
@@ -240,7 +243,9 @@
 }
 
 @include mobile {
+
     #chart {
+        padding-top: 50px;
         p {
             font-size: 13px;
             line-height: 1.5;

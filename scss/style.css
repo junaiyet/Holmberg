@@ -529,6 +529,9 @@ p {
     font-size: 35px; }
 
 @media (max-width: 575.98px) {
+  #catagory {
+    padding-top: 50px; }
+
   .collaborative-workspace .block {
     width: 100%;
     margin-bottom: 10px; } }
@@ -563,9 +566,11 @@ p {
   border-radius: 25px; }
 
 @media (max-width: 575.98px) {
-  #chart p {
-    font-size: 13px;
-    line-height: 1.5; } }
+  #chart {
+    padding-top: 50px; }
+    #chart p {
+      font-size: 13px;
+      line-height: 1.5; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #chart h4 {
     font-size: 16px; } }
