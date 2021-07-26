@@ -9,7 +9,7 @@
 #about {
     position: relative;
     padding-top: 0px !important;
-    margin-top: 150px;
+    margin-top: 100px;
 
     .svg {
         width: 100%;
@@ -171,6 +171,7 @@
             color: $secondery-color;
             font-weight: 700;
             font-size: 35px;
+            line-height: 1.2;
         }
 
 
@@ -220,7 +221,7 @@
 }
 .chart-number {
     height: 25px;
-    width: 25px;
+    min-width: 25px;
     line-height: 25px;
     border-radius: 50%;
     background: $text-bg-primary;
